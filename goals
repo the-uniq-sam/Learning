@@ -1,0 +1,18 @@
+Advanced Topics
+
+Templates: Generic programming, function templates, class templates.
+Exception Handling: try, catch, throw, exception classes.
+File Handling: Reading from and writing to files.
+Namespaces: Organizing code into logical groups.
+Smart Pointers: (unique_ptr, shared_ptr, weak_ptr) for automatic memory management.
+Lambda Expressions: Anonymous functions for concise code.
+Concurrency and Multithreading: Threads, mutexes, condition variables (more advanced and requires careful study).
+Low-Level Development (LLD) - As you mentioned!
+
+Memory Management: Deep dive into memory allocation strategies, custom allocators.
+Data Structures: Implementing your own linked lists, trees, graphs, etc.
+Operating System Concepts: Processes, threads, synchronization, inter-process communication.
+Resources
+
+Websites: cplusplus.com, learncpp.com, GeeksforGeeks
+Books: "The C++ Programming Language" (Bjarne Stroustrup), "Effective C++" (Scott Meyers), "C++ Primer" (Stanley Lippman)
