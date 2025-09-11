@@ -57,13 +57,13 @@ public class Game{
         return this.currentPlayer;
     }
 
-    public Player switchPlayer(){
+    public void switchPlayer(){
         if(currentPlayer == player1){
             currentPlayer = player2;
         }else{
             currentPlayer = player1;
         }
-        return currentPlayer;
+        return;
     }
 
 }
