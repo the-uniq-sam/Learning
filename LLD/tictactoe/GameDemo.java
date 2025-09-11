@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 import enums.Symbol;
-import models.Board;
+import enums.GameStatus;
 import models.Player;
 
 public class GameDemo {
@@ -21,8 +21,21 @@ public class GameDemo {
         System.out.println("Input Board Size");
         int n = scanner.nextInt();
 
-        Board board = new Board(n);
+        Game game = new Game(player1, player2, n);
 
+        while(game.getGameStatus() == GameStatus.CONTINUE){
+            System.out.println("Input Cell Coordinates");
+            int i = scanner.nextInt();
+            int j = scanner.nextInt();
+            if(game.makeMove(i, j)){
+                game.board.printBoard();
+            }
+        }
+        if(GameStatus.DRAW == game.getGameStatus()){
+            System.out.println("DRAW");
+        }else{
+            System.out.println(game.getCurrPlayer().getName() + " WINS");
+        }
         
         scanner.close();
     }
